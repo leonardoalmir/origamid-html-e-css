@@ -1,0 +1,35 @@
+div.bicicleta {
+  height: 600px;
+  background-color: lightblue;
+  background-image: url("../img/bicicleta.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 200px 200px; largura e altura */
+  background-size: contain; /* mesma coisa que 100% */
+  background-size: cover;
+  background-position: center top; /* Ao diminuir a janela, não corta o topo, somente dos lados e embaixo */
+  background: lightblue url("../img/bicicleta.jpg") no-repeat cover center top; /* Escrevendo todas as propriedades numa só linha */
+  display: flex;
+}
+
+h1 {
+  color: rgba(240, 255, 255, 0.585);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.191);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+}
+
+.pattern {
+  height: 300px;
+  background-color: rgb(33, 33, 33);
+  background-image: url("../img/pattern.svg");
+  background-repeat: repeat;
+  background-size: 50px;
+}
+
+.linear {
+  height: 300px;
+  background-image: linear-gradient(rgb(33, 33, 33), lightblue);
+}
