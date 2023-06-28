@@ -1,0 +1,41 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    grid-column: 1/-1;
+}
+
+@media (max-width:245px) {
+    main {
+        gap: 1rem;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    h1 {
+        background-color: #cfa;
+    }
+}
+
+@media (min-width:900px) {
+    html {
+        font-size: 150%;
+    }
+    h1 {
+        background-color: #caf;
+    }
+}
