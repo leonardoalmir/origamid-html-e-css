@@ -1,0 +1,78 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  background-color: #caf;
+  color: #217;
+  border-radius: 4px;
+  /* transition: .3s; */
+}
+
+/* ======================== */
+/* Pseudo Classes de Estado */
+/* ======================== */
+
+a:hover {
+  background-color: #adf;
+  color: #147;
+}
+
+a:focus {
+  background-color: #cfa;
+  color: #371;
+}
+
+a:active {
+  background-color: #ffa;
+  color: #761;
+}
+
+/* a:visited {
+    background-color: #fda;
+    color: #731;
+} */
+
+/* ========================== */
+/* Pseudo Classe de Seletores */
+/* ========================== */
+
+/* Seleciona o primeiro filho */
+.lista-1 li:first-child {
+    background-color: #caf;
+}
+/* Seleciona um filho especifico */
+.lista-1 li:nth-child(3) {
+    background-color: #ffa;
+}
+
+/* Seleciona o último filho */
+.lista-1 li:last-child {
+    background-color: #cfa;
+}
+
+/* Seleciona os pares */
+.lista-2 li:nth-child(even) {
+    background-color: #adf;
+}
+
+/* Seleciona os impares */
+.lista-2 li:nth-child(odd) {
+    background-color: #faa;
+}
+
+/* Seleciona de 4 em 4 */
+.lista-3 li:nth-child(4n) {
+    background-color: rgb(170, 255, 204);
+}
+
+/* Nega a seleção dos itens especificados */
+.lista-4 li:not(:first-child, :last-child, .especifico) {
+    background-color: rgb(193, 193, 193);
+}
+
+/* Está negando o id contato */
+h2:not(#contato) {
+    text-decoration: underline;
+}
