@@ -1,0 +1,16 @@
+body {
+    height: 1200px;
+}
+div {
+    margin-top: 40px;
+    border: 2px solid #ccc;
+    padding: 20px 20px 40px 20px;
+}
+
+span {
+    background-color: #e7e7e7;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative;
+    top: -30px;
+}
