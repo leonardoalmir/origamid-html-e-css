@@ -1,0 +1,23 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho-menu li a {
+    text-decoration: none;
+    color: #141414;
+    padding: 10px 20px;
+    font-size: 1.125rem;
+}
