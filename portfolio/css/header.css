@@ -16,8 +16,28 @@
 }
 
 .cabecalho-menu li a {
+    display: block;
     text-decoration: none;
     color: #141414;
     padding: 10px 20px;
     font-size: 1.125rem;
+}
+
+@media (max-width:600px) {
+    .cabecalho {
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cabecalho-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cabecalho-menu li a {
+        background-color: #f5f5f5;
+        font-size: 1rem;
+    }
 }

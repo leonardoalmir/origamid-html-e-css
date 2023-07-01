@@ -4,9 +4,24 @@ body {
     margin: 0px;
     font-family: 'Fira Sans',Arial, sans-serif;
     color: #141414;
+    height: 1200px;
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
 }
