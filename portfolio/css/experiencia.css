@@ -7,8 +7,71 @@
     line-height: 9rem;
 }
 
-.experiencia-especificacoes {
+.experiencia-especificacoes > p {
     color: #525252;
     font-size: 1.5rem;
     line-height: 1.5;
+    width: 40ch;
+    padding-bottom: 3.75rem;
+    padding-top: 0.625rem;
+}
+
+.empresas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 10px 80px;
+    margin-bottom: 1.25rem;
+    position: relative;
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+
+.empresas::before {
+    content: "";
+    background-image: linear-gradient(180deg, #B6F829 0%, #67DD0A 100%);
+    width: 0.35rem;
+    height: 1.25rem;
+    position: absolute;
+    top: 20px;
+    left: -2.8px;
+}
+
+.emrpesas-ano {
+    color: #525252;
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    width: 7ch;
+    text-align: right;
+}
+
+.empresas-titulo,
+.empresas-cargo {
+    color: #000;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.empresas-texto {
+    color: #525252;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 40ch;
+}
+
+.empresas-tecnologias {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem 0.75rem;
+}
+
+.empresas-tecnologias li {
+    background-color: #fff;
+    align-self: flex-start;
+    padding: 5px 10px;
 }
