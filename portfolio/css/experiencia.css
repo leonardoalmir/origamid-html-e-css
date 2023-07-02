@@ -1,0 +1,14 @@
+.experiencia-subtitulo {
+    color: #E0E0E0;
+    text-transform: uppercase;
+    font-size: 9rem;
+    word-break: break-all;
+    max-width: 4ch;
+    line-height: 9rem;
+}
+
+.experiencia-especificacoes {
+    color: #525252;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
