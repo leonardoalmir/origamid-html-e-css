@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formularios.css">
+    <title>Formulários 1</title>
+</head>
+<body>
+    <form action="./" method="get">
+        <h1>Formulário</h1>
+        <div class="container">
+            <div class="input-nome">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label for="usuario">Usuário</label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="idade">idade</label>
+                <input type="number" name="idade" id="idade" disabled>
+            </div>
+            <div>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data" id="data">
+            </div>
+        </div>
+        <h3>Termos e aceite</h3>
+        <div class="checkbox">
+            <input type="checkbox" name="termos" id="termos" value="aceito">
+            <label for="termos">Aceito os termos e condições da empresa.</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="anuncios" id="anuncios" value="aceito">
+            <label for="anuncios">Desejo receber e-mails com promoções.</label>
+        </div>
+        <h3>Tipo de entrega</h3>
+        <div class="container-radio">
+            <div class="radio">
+                <input type="radio" name="tipo-entrega" id="retirar" value="retirar">
+                <label for="retirar">Retirar no local</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="tipo-entrega" id="receber" value="receber">
+                <label for="receber">Receber em casa</label>
+            </div>
+        </div>
+        <h3>Pagamento</h3>
+        <select name="pagamento" id="pagamento">
+            <option value="1x">1x R$ 400,00 (sem juros)</option>
+            <option value="2x">2x R$ 200,00 (sem juros)</option>
+            <option value="3x">3x R$ 133,33 (sem juros)</option>
+            <option value="4x">4x R$ 100,00 (sem juros)</option>
+        </select>
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao" rows="10"></textarea>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

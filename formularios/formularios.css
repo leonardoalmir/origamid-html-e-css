@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+    padding: 40px 0 80px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    gap: 10px 80px;
+    justify-content: space-evenly;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-nome {
+    grid-column: 1/-1;
+}
+
+.checkbox,
+.radio {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.radio {
+    margin: 0;
+}
+
+.container-radio {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.checkbox input,
+.radio input {
+    margin: 0;
+    width: 15px;
+}
+
+.checkbox label,
+.radio label {
+    margin: 0;
+    font-weight: 400;
+}
+
+select {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+
+button {
+    margin-top: 30px;
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: rgb(8, 68, 187);
+    color: #fafafa;
+    border-radius: 4px;
+    border: 2px solid rgb(46, 116, 255);
+    transition: .5s;
+}
+
+button:hover {
+    background-color: rgb(0, 78, 233);
+    border: 2px solid rgb(0, 38, 114);
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
