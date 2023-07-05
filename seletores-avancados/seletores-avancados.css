@@ -1,0 +1,76 @@
+/* ================== */
+/* Estilização Global */
+/* ================== */
+
+.campo {
+    margin: 30px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: aquamarine;
+    padding: 20px 10px;
+}
+
+ul {
+    background-color: lightsteelblue;
+    padding: 30px 40px;
+}
+
+/* ============================= */
+/* ==== Seletores Avançados ==== */
+/* ============================= */
+
+/* Seleciona os elementos que tiverem o atributo dentro dos [] */
+[required] {
+    border: 2px solid tomato;
+}
+
+/* Seleciona somente os elementos que tiverem o atributo e o valor especifico */
+[name="email"] {
+    border: 2px solid blueviolet;
+}
+
+/* Aqui estamos especificando uma tag ancora com o atributo e valor especifico */
+a[href="www.google.com"] {
+    color: green;
+}
+
+/* Atributos que comecem ^ com o valor X */
+[href^="#"] {
+    color: navy;
+    font-weight: 700;
+    text-decoration: overline;
+}
+
+/* Atributos que terminam $ com o valor X */
+[href$=".com"] {
+    color: darkorange;
+}
+
+/* Toda tag p que for filho da tag article */
+article p {
+    color: red;
+}
+
+/* Apenas tag p que for filho direto da tag article */
+article > p {
+    color: navy;
+}
+
+/* Todo li que vier após um elemento li */
+/* Perceba que estamos colocando margin-top nos li's, menos no primeiro, porquê antes dele não tem nenhuma tag li */
+li + li {
+    color: orangered;
+    margin-top: 20px;
+}
+
+/* O * é um seletor unviersal. Seleciona todos os elementos do site */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
