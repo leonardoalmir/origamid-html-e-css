@@ -1,0 +1,48 @@
+/* Peso de especificidade 
+
+Do mais forte pro menos forte:
+!important
+Id
+Classe
+tag
+
+Nos casos acima a ordem que uma propriedade é aplicada a um elemento, não importa, o que importa é o peso da especificidade que foi usada. !importante, independente da posição que for adicionado à folha de estilo (arquivo CSS), vai ter prioridade sobre qualquer outro estilo idêntico, aplicado ao mesmo elemento. Depois vem o ID, a classe e por último a própria tag.
+*/
+
+h2 {
+    color: blue;
+}
+/* Até aqui todas tags h2 estão azuis 
+Especificidade 0,0,1
+A primeira casa é a quantidade de ID, a segunda de Classe e a terceira de tags */
+
+html body section h2 {
+    color: brown;
+}
+/* Aqui todas as tags h2 ficaram marrom, pois estamos especificando 4 tags para estilizar o elemento, então a especificidade está: 0,0,4 */
+
+.game {
+    color: green;
+}
+/* Aqui todas as tags h2 ficaram verde, pois estamos aplicando a estilização em cima da classe, que tem uma importância maior do que tags. Mesmo no caso acima sendo 4 tags. A especificidade aqui é 0,1,0 */
+
+.ps {
+    color: blueviolet;
+}
+/* Nesse caso a palavra Playstation ficou violeta, pois assim como na estilização acima, estamos usando classe, elas tem a mesma importância de especificidade (0,1,0), mas essa estilização aqui veio depois da anterior. */
+
+#xbox {
+    color: rgb(0, 205, 170);
+}
+/* A tag h2 de Xbox sofreu alteração de estilização aqui, pois o ID é mais importante do que qualquer outra estilização aplicada anteriormente. A especificidade aqui é (1,0,0). */
+
+.game.pc {
+    color: blue;
+}
+/* Esse h2 ficou azul, pois estamos aplicando duas classes nele com especificidade de 0,2,0.Tem um pese 2 na casa das classes. */
+
+/* 
+.game {
+    color: black!important;
+}
+Se usarmos esse !important todas tags h2 vão ficar pretas, pois ela tem a maior importância de especificidade, independente da posição no arquivo CSS */
