@@ -1,0 +1,29 @@
+/* Usando variáveis no CSS
+Podemos declarar as variáveis no elemento pai, em alguns momentos vamos ver as declarações no html mesmo, mas não funcionária em arquivos XML ou SVG. O ideal é no :root mesmo. */
+:root {
+    --cor-primaria: #84e;
+    --cor-secundaria: #444;
+    --cor-terciaria: rgb(160, 160, 160);
+    --fonte-primaria: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    max-width: 1200px;
+}
+
+h2 {
+    color: var(--cor-primaria);
+}
+
+h3 {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--cor-terciaria);
+    font-weight: 400;
+}
+
+p {
+    color: var(--cor-secundaria);
+}
