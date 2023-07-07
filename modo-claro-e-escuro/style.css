@@ -1,0 +1,70 @@
+:root {
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --cor-fundo: #fff;
+    --cor-fundo-item: #f7f7f7;
+    --cor-fundo-botao: rgb(70, 55, 108);
+    --cor-texto-botao: #fff;
+    --cor-titulo: #111; 
+    --cor-paragrafo: #444;
+    --borda: 1px solid #e7e7e7;
+}
+
+/* A estilização do site vai mudar de acordo com o tema light (claro) ou dark (escuro). Por padrão estamos aplicando o tema light (claro).*/
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fonte-principal: Arial, Helvetica, sans-serif;
+        --cor-fundo: #222;
+        --cor-fundo-item: #191919;
+        --cor-fundo-botao: rgb(109, 88, 161);
+        --cor-texto-botao: #e7e7e7;
+        --cor-titulo: #eee; 
+        --cor-paragrafo: #bbb;
+        --borda: 1px solid #3e3d3d;
+    }
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--cor-titulo);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+h2 {
+    margin-top: 0px;
+    color: var(--cor-titulo);
+}
+
+p {
+    color: var(--cor-paragrafo);
+}
+
+.comprar {
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-texto-botao);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+ .item {
+    background-color: var(--cor-fundo-item);
+    border: var(--borda);
+    padding: 20px;
+    border-radius: 4px;
+    display: grid;
+ }
+
+ .grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;  */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+ }
