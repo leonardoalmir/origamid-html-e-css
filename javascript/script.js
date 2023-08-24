@@ -1,4 +1,4 @@
-// 1102 Manipular DOM
+/* 1102 Manipular DOM */
 const nav = document.querySelector("nav");
 const produtos = document.querySelector(".produtos a");
 
@@ -62,3 +62,12 @@ console.log(texto.clientHeight); //mostra a altra em pixels que esse objeto ocup
 const decimal = 2.99;
 console.log(decimal.toFixed()); //arredonda o decimal pra um inteiro, mas retorna como string
 console.log(Number(decimal.toFixed())) //transformando a string em número usando a função Number()
+
+/* 1105 Funções 1 */
+
+function logCurso() {
+    const nome = "JavScript";
+    console.log(nome);
+}
+
+logCurso();
