@@ -40,7 +40,7 @@ const filme = {
 }
 
 console.log (livro);
-console.log(livro.nome.toUpperCase());
+console.log(livro.nome.toUpperCase()); //passa pra maiúscula
 console.log(2023 - livro.ano);
 console.log(2023 - filme.ano);
 
@@ -53,10 +53,12 @@ if (livro.nome === nome) {
     console.log("Não são iguais")
 }
 
-console.log(livro.nome.length);
+console.log(livro.nome.length); //quantidade de caracteres
 
 const texto = document.querySelector("p");
-console.log(texto.innerHTML);
+console.log(texto.innerHTML); //o texto que tá dentro da tag
 console.log(texto.clientHeight); //mostra a altra em pixels que esse objeto ocupa na tela.
 
-
+const decimal = 2.99;
+console.log(decimal.toFixed()); //arredonda o decimal pra um inteiro, mas retorna como string
+console.log(Number(decimal.toFixed())) //transformando a string em número usando a função Number()
