@@ -71,3 +71,38 @@ function logCurso() {
 }
 
 logCurso();
+logCurso();
+
+// Usando argumentos
+
+function logCursoArgs(nome) { //definindo o parâmetro nome
+    console.log(nome);
+}
+logCursoArgs("HTML"); //Passando argumento pra função
+
+// Multiplos argumentos
+function logCursoMultArgs(nome, horas) {
+    console.log(nome, horas, "horas");
+}
+
+logCursoMultArgs("CSS",40);
+
+// Retorno
+// Toda função retorna um valor (tipo de dado). Se não for declado usando a palavra return, o valor retornado será undefined.
+function logCursoRetorno(nome, horas){
+    console.log(nome, horas);
+    return "Teste";
+}
+
+const pegaRetorno = logCursoRetorno("JS", 60);
+console.log(pegaRetorno); //Retorna Teste
+
+// Pra fazer mais sentido...
+function logCursoRetorno2(nome, horas){
+    console.log(nome, horas);
+    return horas;
+}
+const pegaRetorno2 = logCursoRetorno2("Bootstrap", 60);
+console.log(pegaRetorno2);
+
+// Retornando Objeto
