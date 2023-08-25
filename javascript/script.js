@@ -106,3 +106,14 @@ const pegaRetorno2 = logCursoRetorno2("Bootstrap", 60);
 console.log(pegaRetorno2);
 
 // Retornando Objeto
+function retornaObjeto(nome, horas) {
+    console.log(nome, horas);
+    return {
+        nome,
+        horas
+    };
+}
+
+const pegaRetornoObjeto = retornaObjeto("React", 120);
+
+console.log(pegaRetornoObjeto.nome);
