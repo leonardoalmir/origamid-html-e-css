@@ -1,0 +1,25 @@
+body {
+    height: 200vh;
+}
+
+.ativo {
+    border: 2px solid red;
+}
+
+.texto {
+    display: none;
+}
+
+.texto.mostrar {
+    display: block;
+}
+
+.bolinha {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 20;
+    left: 200;
+    background-color: #999;
+    border-radius: 50%;
+}
